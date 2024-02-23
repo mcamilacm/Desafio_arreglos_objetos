@@ -1,0 +1,48 @@
+.main-section {
+    background-image: url('../img/img-main.jpeg');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    height: 100px;
+}
+
+.card img{
+    height: 250px;
+}
+
+.grid-container
+{
+    display:grid;
+    grid-template-areas: 
+    hero
+    main;
+}
+
+main
+{
+    grid-area:main;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+}
+
+hero
+{
+    grid-area:hero;
+    display: grid;
+
+}
+
+.template_space
+{
+
+    border: 1px solid gray;
+}
